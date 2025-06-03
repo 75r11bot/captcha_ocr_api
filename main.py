@@ -1,6 +1,6 @@
 #main.py
-from fastapi import FastAPI, UploadFile, File, Query, Response
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, UploadFile, File, Query
+from fastapi.responses import JSONResponse, Response  
 import os
 import cv2
 import numpy as np
