@@ -8,6 +8,10 @@ from utils.image_processing import preprocess_image, match_template, save_templa
 
 app = FastAPI()
 
+@app.head("/")
+async def health_check():
+    return Response(status_code=200)
+
 @app.on_event("startup")
 def startup_event():
     load_templates()
