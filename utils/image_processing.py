@@ -1,3 +1,4 @@
+# utils/image_processing.py
 import os
 import cv2
 import numpy as np
@@ -63,6 +64,34 @@ def crop_captcha(img, num_chars=4):
         cv2.imwrite(f"cropped_debug/char_{i}.png", char_img)
         chars.append(preprocess_image(char_img))
     return chars
+
+# def crop_captcha(img, num_chars=4):
+#     import os
+#     os.makedirs("cropped_debug", exist_ok=True)
+
+#     binary = preprocess_image(img)
+#     contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+#     filtered_contours = []
+#     for cnt in contours:
+#         x, y, w, h = cv2.boundingRect(cnt)
+#         area = w * h
+#         if area > 50:  # กรอง noise
+#             filtered_contours.append(cnt)
+
+#     # จัดเรียงซ้าย → ขวา
+#     contours = sorted(filtered_contours, key=lambda cnt: cv2.boundingRect(cnt)[0])
+
+#     chars = []
+#     for i, cnt in enumerate(contours[:num_chars]):
+#         x, y, w, h = cv2.boundingRect(cnt)
+#         char_img = binary[y:y+h, x:x+w]
+
+#         resized = cv2.resize(char_img, (28, 28))
+#         cv2.imwrite(f"cropped_debug/char_{i}.png", resized)
+#         chars.append(resized)
+
+#     return chars
 
 def match_template(img_char):
     img_char = preprocess_image(img_char)
