@@ -73,7 +73,10 @@ async def ocr(file: UploadFile = File(...)):
         "confidence": int(avg_confidence)
     }
 
-
+@app.head("/")
+async def health_check():
+    return Response(status_code=200)
+    
 @app.get("/")
 def read_root():
     return {"status": "ok"}
