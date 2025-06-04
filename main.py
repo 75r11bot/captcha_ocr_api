@@ -14,7 +14,12 @@ async def health_check():
 
 @app.on_event("startup")
 def startup_event():
-    load_templates()
+    try:
+        print("🚀 Starting app")
+        load_templates()
+        print("✅ Templates loaded")
+    except Exception as e:
+        print(f"❌ Error loading templates: {e}")
 
 @app.post("/api/reload-templates")
 def reload_templates():
