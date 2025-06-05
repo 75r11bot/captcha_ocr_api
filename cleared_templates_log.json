@@ -1,16 +1,11 @@
 [
   {
-    "filename": "6_152.png",
+    "filename": "4_163.png",
     "reason": "too many contours",
     "too": 4
   },
   {
-    "filename": "7_135.png",
-    "reason": "too many contours",
-    "too": 4
-  },
-  {
-    "filename": "A_31.png",
+    "filename": "9_68.png",
     "reason": "too many contours",
     "too": 4
   },
@@ -20,62 +15,42 @@
     "too": 4
   },
   {
-    "filename": "A_35.png",
+    "filename": "A_33.png",
+    "reason": "too many contours",
+    "too": 4
+  },
+  {
+    "filename": "M_135.png",
     "reason": "too many contours",
     "too": 5
   },
   {
-    "filename": "A_36.png",
+    "filename": "P_152.png",
     "reason": "too many contours",
     "too": 4
   },
   {
-    "filename": "A_37.png",
+    "filename": "Q_127.png",
+    "reason": "too many contours",
+    "too": 4
+  },
+  {
+    "filename": "Q_129.png",
+    "reason": "too many contours",
+    "too": 4
+  },
+  {
+    "filename": "S_140.png",
     "reason": "too many contours",
     "too": 5
   },
   {
-    "filename": "E_148.png",
+    "filename": "W_119.png",
     "reason": "too many contours",
     "too": 4
-  },
-  {
-    "filename": "H_136.png",
-    "reason": "too many contours",
-    "too": 4
-  },
-  {
-    "filename": "N_102.png",
-    "reason": "too many contours",
-    "too": 4
-  },
-  {
-    "filename": "P_151.png",
-    "reason": "too many contours",
-    "too": 4
-  },
-  {
-    "filename": "Q_128.png",
-    "reason": "too many contours",
-    "too": 5
-  },
-  {
-    "filename": "T_152.png",
-    "reason": "too many contours",
-    "too": 4
-  },
-  {
-    "filename": "V_153.png",
-    "reason": "too many contours",
-    "too": 5
   },
   {
     "filename": "Y_118.png",
-    "reason": "too many contours",
-    "too": 5
-  },
-  {
-    "filename": "Z_171.png",
     "reason": "too many contours",
     "too": 4
   }
